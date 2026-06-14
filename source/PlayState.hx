@@ -1,5 +1,6 @@
 package;
 
+import charting.Charter;
 import lime.utils.Assets;
 import haxe.Json;
 import flixel.addons.sound.FlxRhythmConductorUtil;
@@ -29,5 +30,11 @@ class PlayState extends MusicState
 		super.update(elapsed);
 
 		conductor.update(FlxG.sound.music.time);
+
+		if (FlxG.keys.justPressed.SEVEN)
+		{
+			FlxG.sound.music.stop();
+			FlxG.switchState(() -> new Charter());
+		}
 	}
 }
