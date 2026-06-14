@@ -4,6 +4,9 @@ dump/
 
 .DS_Store
 
-**.ini
-**/Backup/**
-**/Ableton Project Info/**
+**.asd
+
+art/songs/**/**.ini
+art/songs/**/**.wav
+art/songs/**/Backup/**/**
+art/songs/**/Ableton Project Info/**/**
