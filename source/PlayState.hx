@@ -1,9 +1,10 @@
 package;
 
+import flixel.addons.sound.FlxRhythmConductorUtil;
 import flixel.FlxG;
 import flixel.FlxState;
 
-class PlayState extends FlxState
+class PlayState extends MusicState
 {
 	var curSong:String;
 
@@ -13,8 +14,15 @@ class PlayState extends FlxState
 
 		curSong = 'mrdearest';
 
-		FlxG.sound.playMusic(Paths.getSong(curSong));
+		resetConductor();
 
+		FlxG.sound.playMusic(Paths.getSong(curSong));
+		conductor.setupTimeChanges(FlxRhythmConductorUtil.parseTimeChanges([
+			{
+				t: 0,
+				bpm: 120.0,
+			},
+		]));
 	}
 
 	override public function update(elapsed:Float)
