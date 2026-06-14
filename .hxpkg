@@ -1,0 +1,29 @@
+[
+	{
+		"profile": "default",
+		"pkgs": [
+			{
+				"name": "flixel",
+				"version": "6.1.2"
+			},
+			{
+				"name": "openfl",
+				"version": "9.5.2"
+			},
+			{
+				"name": "lime",
+				"version": "8.3.2"
+			},
+			{
+				"name": "flixel-addons",
+				"version": "4.0.1"
+			},
+			{
+				"name": "hxcpp"
+			},
+			{
+				"name": "hxcpp-debug-server"
+			}
+		]
+	}
+]
