@@ -27,5 +27,7 @@ class PlayState extends MusicState
 	override public function update(elapsed:Float)
 	{
 		super.update(elapsed);
+
+		conductor.update(FlxG.sound.music.time);
 	}
 }
