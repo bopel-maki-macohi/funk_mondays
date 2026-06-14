@@ -3,6 +3,11 @@ import flixel.addons.sound.MusicTimeChangeEvent.MusicTimeChangeData;
 typedef Song =
 {
 	var timeChanges:Array<MusicTimeChangeData>;
+	var sections:Array<SongSection>;
+}
+
+typedef SongSection =
+{
 	var notes:Array<SongNote>;
 }
 
