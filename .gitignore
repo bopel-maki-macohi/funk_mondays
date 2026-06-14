@@ -3,3 +3,7 @@ export/
 dump/
 
 .DS_Store
+
+**.ini
+**/Backup/**
+**/Ableton Project Info/**
